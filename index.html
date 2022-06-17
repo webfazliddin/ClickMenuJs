@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar with JS</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  </head>
+  <body>
+    <nav>
+      <label class="logo">Javascript</label>
+      <ul>
+        <li><a class="active" href="#">Home</a>
+            <li><a href="#">About</a>
+                <li><a href="#">Blog</a>
+                    <li><a href="#">Services</a>
+                        <li><a href="#">Conatct</a>                                        
+      </ul>
+      <label id="icon">
+        <i class="fa-solid fa-bars"></i></i>
+      </label>
+    </nav>
+    <script>
+      $(document).ready(function(){
+        $('#icon').click(function(){
+         $('ul').toggleClass('show') 
+        })
+      });
+    </script>
+  </body>
+</html>
